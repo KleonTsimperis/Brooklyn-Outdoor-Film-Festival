@@ -1,0 +1,458 @@
+/* Applying class when scrolling to set fixed-top*/
+.classfixed{
+  position:fixed;
+}
+
+#mynavbar{
+  width:100vw;
+  background-color: #0a0109;
+  height: 3rem;
+}
+
+.cardcolor{
+  background-color: #0a0109;
+}
+
+h4>a{
+  color:#f7957b!important;
+  transition: text-shadow 1s linear; 
+}
+
+
+
+h1{
+    text-shadow: 0px 0px 10px #f7957b,
+  10px 0px 20px #f7957b,
+  10px 0px 30px #f7957b,
+  10px 0px 40px #f7d0c5,
+  0px 10px 50px #f7d0c5,
+  0px 10px 60px #f7d0c5,
+  0px 10px 70px #fce8e3,
+  0px 10px 80px #fce8e3,
+  0px 10px 90px #fff,
+  0px 10px 100px #fff;
+}
+
+
+.hidenavbar{
+  display:none;
+}
+
+#firstnav{
+  height: 4rem;
+  background-color: black;
+  border-bottom: solid 1px #a589a3;
+  color:#f7957b;
+  font-family:"Codystar", sans-serif;
+  background-color: #441341;
+
+}
+
+/* Nav bar when scrolled through scroll-spy*/
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #fff , 0 0 70px #fff , 0 0 80px #fff , 0 0 100px #fff ;
+  background-color:#0a0109;
+}
+
+
+
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"Playfair Display", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+
+
+
+button{
+ align-self:center;
+ border-radius: 30px;
+ border: solid 4px #00a8e1;
+ background:transparent;
+ border-color:#00a8e1;
+ padding:0.5rem 1rem;
+ margin:0 1rem;
+ transition:all 3s ease;
+ color:white;
+ font-size:1.2rem;
+ letter-spacing:1px;
+ outline:none;
+ cursor:pointer;
+}
+
+button:hover{
+ box-shadow: 20px 38px 14px -16px #fff;
+} 
+
+
+a:hover{
+  text-decoration: none;
+  color: #00a8e1;
+}
+
+h4 a:hover{
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+}
+
+img:hover{
+  transform: scale(1.05);
+  transition: 5s ease;
+}
+
+
+
+.brdsld{
+  border:solid 1px;
+}
+
+.overfl{
+   overflow: hidden;
+}
+
+
+.brk1, .brk1b, .brk2, .brk3, .brk4{
+  position:relative;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-color: #fff;
+  /*
+    fixed = parallax
+    scroll = normal
+  */
+  background-attachment:fixed;
+}
+
+
+.brk1{
+  background-image:url('brk1.jpg');
+  min-height:100%;
+
+}
+
+.brk1b{
+  background-image:url('brk8.jpg');
+  min-height:65vh;
+  opacity: 0.9;
+}
+
+.brk2{
+  background-image:url('brk2.jpg');
+  min-height:65vh;
+  opacity: 0.9;
+}
+
+.brk3{
+  background-image:url('brk3.jpg');
+  min-height:65vh;
+  opacity: 0.9;
+}
+
+.brk4{
+  background-image:url('brk4.jpg');
+  min-height:65vh;
+  opacity: 0.9;
+}
+
+
+.section{
+  text-align:center;
+  padding:50px 80px;
+}
+
+.section-light{
+  background-color:#f7af9b;
+  color:#0a0109;
+
+}
+
+.section-dark{
+  background-color:#0a0109;
+  color:#f7af9b;
+}
+
+.ptext{
+/*  position:relative;
+  top:15rem;
+  width:100%;
+  text-align:center;
+  color:#000;
+  font-size:1rem;
+  letter-spacing:8px;
+  text-transform:uppercase;*/
+}
+
+.ptext .border{
+  background-color:#111;
+  color:#fff;
+  padding:20px;
+  font-size: 1.5rem;
+}
+
+.ptext .border.trans{
+  background-color:transparent;
+}
+
+#mod1, #mod2, #mod3{
+  background-image:linear-gradient(to top, #f7af9b 0, #441341 100%); 
+  color:white;
+}
+
+
+footer{
+   background: radial-gradient(farthest-side at 10% 15%, #f7af9b, #441341, #0a0109);
+   color: #fff;
+}
+
+
+.formfooter{
+  border: solid 2px #f7957b;
+  border-radius: 20px;
+  width:85%;
+  display:block;
+  margin:0 auto;
+  background-color: rgba(0,0,0, 0.5);
+  height: 340px;  
+}
+
+ 
+#howtogethere{
+  color:#fff;
+}
+
+
+
+.neon{
+  color:#fff;
+  text-shadow: 0px 0px 10px #fff,
+  10px 0px 20px #f7957b,
+  10px 0px 30px #f7957b,
+  10px 0px 40px #f7d0c5,
+  0px 10px 50px #f7d0c5,
+  0px 10px 60px #f7d0c5,
+  0px 10px 70px #fce8e3,
+  0px 10px 80px #fce8e3,
+  0px 10px 90px #fff,
+  0px 10px 100px #fff;
+  font-size: 4rem;
+  font-weight: 600;
+  width: 60vw;
+  border: solid 2px #f7957b;
+  border-radius: 20px;
+  background-color: rgba(0,0,0, 0.8);
+}
+
+
+.maincontainer{
+  position: relative;
+  width: 20rem;
+  height: 20rem;
+  background: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+/* The card holds the front and back faces */
+.thecard{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+/* The hover that controlls the rotate */
+.thecard:hover{
+  transform: rotateY(180deg);
+}
+
+/* Front of card */
+ .thefront{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #d8d6d0;
+  color: #000;
+}
+
+/* Back of card shown with mouse hover */
+.theback{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #fafafa;
+  color: #333;
+  text-align: center;
+  transform: rotateY(180deg);
+  background-image:linear-gradient(to top, #f7af9b 0, #441341 100%); 
+  color:white;
+  border:none;
+}
+
+
+/*Ticket*/
+
+.ticket {
+    backface-visibility: hidden;
+    transform: rotate(16deg) translateY(25%) translateZ(0);
+    transform-origin: 50% 50%;
+    top: 75%;
+    left: 95%;
+    margin-top: -65px;
+    margin-left: -144px;
+    position: absolute;
+    display: inline-block;
+    padding: 15px 25px;
+    background-image:
+        radial-gradient( ellipse closest-side at 50%  50%, hsla(0, 0%, 100%, 0.10), transparent 90%),
+        radial-gradient( circle at 0    100%, transparent 14px, #fa616d 15px),
+        radial-gradient( circle at 100% 100%, transparent 14px, #fa616d 15px),
+        radial-gradient( circle at 100% 0, transparent 14px, #fa616d 15px),
+        radial-gradient( circle at 0    0, transparent 14px, #fa616d 15px);
+    background-position: center center, bottom left, bottom right, top right, top left;
+    background-size: cover, 51% 51%, 51% 51%, 51% 51%, 51% 51%;
+    background-repeat: no-repeat;
+    border-width: 0 4px;
+    border-color: transparent;
+    border-style: solid;
+    border-image: radial-gradient(cover circle, #fa616d 0%, #fa616d 50%, transparent 51%) 0 39% / 15px 4px repeat;
+    -webkit-filter: drop-shadow(hsla(0, 0%, 0%, 0.55) 1px 1px 2px);
+    cursor: pointer;
+
+
+}
+
+.ticket + .ticket {
+    transform: rotate(-7deg) translateY(-25%) translateX(10px) translateZ(0);
+    z-index: 1;
+}
+
+.ticket > div {
+    width: 130px;
+    height: 60px;
+    box-sizing: border-box;
+    position:relative;
+    border-color: #ea4a56;
+    border-style: solid;
+    border-width: 2px;
+    border-radius:5px;
+    text-align:center;
+    font: 2em/1 Impact;
+    text-transform:uppercase;
+    padding:15px;
+    font-stretch: extra-expanded;   
+}
+
+.ticket > div:before,
+.ticket > div:after {
+    
+    font: .625em/1 'Courier New';
+    position: absolute;
+    width: 96px;
+    line-height: 28px;
+    transform: rotate(90deg) translateZ(0) ;
+    transform-origin: 0% 0%;
+    text-align:center;
+    display: block;   
+    top: 0;
+    border-color: #ea4a56;
+    border-style: solid;
+    border-width: 0;
+}
+.ticket > div:before {
+  left: 28px;
+}
+
+.ticket > div:after {
+  transform-origin: 100% 0%;
+  right: 28px;
+  transform: rotate(-90deg) translateZ(0);
+}
+
+
+/* Contact form*/
+
+
+
+
+
+
+/*Media querie for mobile device*/
+@media(max-width:968px){
+  .brk1, .brk1b, .brk2, .brk3, .brk4{
+    background-attachment:scroll;
+  }
+}
+
+@media(max-width:575px){
+  #mynavbar{
+  height: 0.5rem;
+  }
+}
+
+@media(max-width: 615px){
+  .neon{font-size: 2.5rem; text-align:center;}
+}
+
+@media(max-width: 576px){
+  body{
+    font-size: 0.5rem;
+  }
+  h2{
+    font-size:0.8rem;
+  }
+
+}
+
+@media(max-width: 1000px){
+  #brooklyntitle{
+    font-size:2rem;
+  }
+}
+
+@media(max-width: 746px){
+  .title-position{
+    position:relative;
+    top:0%;
+    height:7rem;
+  }
+}
+
+@media(max-width:595px){
+  h1{
+    font-size:1.5rem;
+  }
+}
+
+@media(max-width: 576px){
+  div[class = "col-sm-12"]{
+    display:block;
+    margin:0 auto;
+  }
+}
+
+.title-position{
+  position: absolute;
+  top:40%;
+  height: 10rem;
+  font-family:"Bungee shade", sans-serif;
+}

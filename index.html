@@ -1,0 +1,947 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  	<script src="https://use.fontawesome.com/af9273ae53.js"></script>
+    <title>Brookly Outdoor Film Festival</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <link async href="http://fonts.googleapis.com/css?family=Warnes" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Akronim|Bungee+Outline|Bungee+Shade|Codystar|Fredericka+the+Great|Miltonian|Rock+Salt|Diplomata|Monofett|Plaster|Playfair+Display|" rel="stylesheet">
+    <!-- /Google fonts -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-social.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+  </head>
+  <body data-spy="scroll" data-target="#mynavbar" data-offset="100">
+  	
+  	<!-- Section 1 -->
+  	<nav class="nav sticky-top" id ="firstnav">
+		<div class="col col-md-3 d-flex flex-row my-auto">
+          <a href="https://www.twitter.com" target="_blank" class="btn btn-social-icon btn-twitter mx-2">
+            <span class="fa fa-twitter"></span>
+          </a>
+          <a href="https://www.facebook.com" target="_blank" class="btn btn-social-icon btn-facebook mx-2">
+            <span class="fa fa-facebook"></span>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" class="btn btn-social-icon btn-instagram mx-2">
+            <span class="fa fa-instagram"></span>
+          </a>
+          <a href="https://www.pinterest.com" target="_blank" class="btn btn-social-icon btn-pinterest mx-2">
+            <span class="fa fa-pinterest"></span>
+          </a>
+          <a href="https://www.flickr.com" target="_blank" class="btn btn-social-icon btn-flickr mx-2">
+            <span class="fa fa-flickr"></span>
+          </a>
+        </div>
+  		<h1 class="text-center my-auto ml-5" style = "letter-spacing:3px;">Brooklyn Vibes Events Co.</h1>
+		<div class="ticket">
+		  <div data-toggle="modal" data-target="#Modal1">Tickets</div>
+		</div>
+	</nav>
+
+  	<nav class="nav nav-pills flex-column flex-sm-row justify-content-start nav-fill animated slideInDown" id="mynavbar">
+  		<div class="container-fluid">
+  			<div class="row">	
+  				<div class="col col-md-10 d-flex flex-row" id ="yoyo">				
+  				  <h4 class="my-auto mx-auto"><a class="flex-sm-fill text-sm-center nav-link" href="#Register" >Register</a></h4>
+			      <h4 class="my-auto mx-auto"><a class="flex-sm-fill text-sm-center nav-link" href="#Info">Festival Info</a></h4>
+			      <h4 class="my-auto mx-auto"><a class="flex-sm-fill text-sm-center nav-link" href="#Media">Published Media</a></h4>
+			      <h4 class="my-auto mx-auto"><a class="flex-sm-fill text-sm-center nav-link" href="#Movies">Movies</a></h4>
+			      <h4 class="my-auto mx-auto"><a class="flex-sm-fill text-sm-center nav-link" href="#Contact">Contact</a></h4>
+  				</div>
+  			</div>
+  		</div>
+    </nav>
+
+    <!-- Title section -->
+    <div class = "brk1 container-fluid">
+    	<div class="row">
+	    	<div class = "col mx-auto title-position"  >
+			 <h2 class="neon mx-auto text-center" id = "brooklyntitle" style = "color:#f7af9b; font-family: 'Codystar'">Brooklyn Outdoor Film Festival</h2>
+	    	</div>
+	    </div>
+    </div>
+   	<!-- /Title section -->
+
+
+    <!-- Modal -->
+	<div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="ModalLabel1" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content" id ="mod1">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="ModalLabel1">Registration Form</h5>
+	        <button type="button" class="" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <!-- Form for Modal -->
+	        <form onsubmit="myFunction()">
+	        <!-- 1st line of Modal including Email and Password -->
+	          <div class="form-row">
+	            <div class="col-6">
+	              <div class="form-group">
+	                <label for="email">Email address</label>
+	                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+	                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+	              </div>
+	              </div>
+	              <div class="col-6">
+	              <div class="form-group">
+	                <label for="name">Name</label>
+	                <input type="text" class="form-control" id="name" placeholder="Enter name">
+	              </div>
+	            </div>
+	          </div>
+	          <!-- /1st line of Modal including Email and Password -->
+	          <!-- 2nd line of Modal including Seats and Days -->
+	          <div class="form-row">
+	            <div class="col-12">
+	              <div class="form-group">
+	                <label for="exampleFormControlSelect1">I require seats for:</label>
+	                <select class="form-control" id="exampleFormControlSelect1">
+	                  <option value = "-1">Select</option>
+	                  <option value = "1">Me only</option>
+	                  <option value = "2">Me + 1 friend (2 seats in total)</option>
+	                  <option value = "3">Me + 2 friends (3 seats in total)</option>
+	                  <option value = "4">Me + 3 friends (4 seats in total)</option>
+	                </select>
+	              </div>
+	            </div>
+	          </div>
+
+	          
+	          <div class="container my-3">
+	            <div class="row">
+	              <div class="col col-md-12" id="forthedatesof">
+	                  For the dates of:
+	              </div>
+	            </div>
+	          </div>
+	          
+	          <div class="form-check form-check-inline"> 
+	            <label class="form-check-label">
+	              <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1"> 5th August
+	            </label>
+	          </div>
+	          <div class="form-check form-check-inline">
+	            <label class="form-check-label">
+	              <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2"> 6th August
+	            </label>
+	          </div>
+	          <div class="form-check form-check-inline ">
+	            <label class="form-check-label">
+	              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" > 7th August
+	            </label>
+	          </div>
+	          <div class="form-check form-check-inline ">
+	            <label class="form-check-label">
+	              <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" > 8th August
+	            </label>
+	          </div>
+	          <!-- /2nd line of Modal including Seats and Days -->
+	        </form>
+	        <!-- /Form for Modal -->
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" data-dismiss="modal">Close</button>
+	        <button type="button" data-dismiss="modal" onclick = "myFunction()">Submit</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- /Modal -->
+
+	<!-- Register Section -->
+
+	<section class = "section section-dark mx-auto col" id="Register">
+		<h2 class="  scrollpage text-center">Register to save your seat</h2>
+    	<p class=" scrollpage text-sm-center">
+    		d ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore <strong> of only 5000 seats</strong> veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, am sed quia consequuntur magni dolores eo <strong> 5th - 8th of August</strong>
+    	</p>
+    	<button class="scrollpage" data-toggle="modal" data-target="#Modal1" >Book now!</button>
+	</section>	
+	
+
+    <div class = "brk1b container-fluid">
+    	<div class="row">
+	    	<div class = "col mx-auto text-center">
+	    	</div>
+	    </div>
+    </div>
+	<!-- /Register Section -->
+
+	<!-- Section 1 -->
+    <section class = "section section-dark" id="Info">
+    	<h2 class="scrollpage">Festival Info</h2>
+    	<p class="scrollpage">
+    		d ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, am sed quia consequuntur magni dolores eo <strong> 5th - 8th of August</strong>
+    	</p>
+
+    	<button type="button" class="scrollpage" data-toggle="modal" data-target="#exampleModalLong">
+              Movie Schedule
+        </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content" id = "mod2">
+                  <div class="modal-header ">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Movie Schedule</h5>
+                    <button type="button" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    
+                      <div>
+                          <h5>5th of August:</h5>
+                          <p>Toy Story @ 6pm</p>
+                          <p>Gone with the wind @ 8pm</p>
+                          <p>Star Wars IV @ 10pm</p>
+                      </div></br>
+                      <div>
+                          <h5>6th of August:</h5>
+                          <p>Before Sunrise @ 6pm</p>
+                          <p>Face/Off @ 8pm</p>
+                          <p>Star Wars V @ 10pm</p>
+                      </div></br>
+                      <div>
+                          <h5>7th of August:</h5>
+                          <p>Snatch @ 6pm</p>
+                          <p>A Fistfull of Dollars @ 8pm</p>
+                          <p>Star Wars VI @ 10pm</p>
+                      </div></br>
+                      <div>
+                          <h5>8th of August:</h5>
+                          <p>The Dinner Game @ 6pm</p>
+                          <p>Reservoir Dogs @ 8pm</p>
+                          <p>12 Angry Men @ 10pm</p>
+                      </div></br>
+
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          <!-- /Modal -->
+        <button class = "scrollpage">
+		<a href="https://www.google.com/maps/dir//40.7015336,-73.9965258/@40.6965146,-74.0066837,15z" target="_blank" id = 'howtogethere'>How to Get Here</a></button>
+
+		<button type="button" class="scrollpage" data-toggle="modal" data-target="#weather">
+              Local Weather
+        </button>
+
+
+        <div class="modal" tabindex="-1" role="dialog" id = "weather">
+		  <div class="modal-dialog" role="document" >
+		    <div class="modal-content" id = "mod3">
+		      <div class="modal-header">
+		        <h5 class="modal-title">Local Weather</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <!-- weather widget start --><a target="_blank" href="http://www.booked.net/weather/new-york-18103"><img src="https://w.bookcdn.com/weather/picture/3_18103_0_1_137AE9_250_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=w209&anc_id=80148"  alt="booked.net"/></a><!-- weather widget end -->
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="" data-dismiss="modal">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+    </section>
+    <!-- /Section 1 -->
+
+    <!-- Section 2 -->
+    <div class = "brk2">
+    	<div class = "ptext">
+
+    	</div>
+    </div>   
+	<section class = "container-fluid section section-dark" id="Media">
+    	<h2 class="scrollpage">Published Media</h2>
+	    <div class="scrollpage">
+    		d ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, am sed quia consequuntur magni dolores eo
+    	</div>
+
+<div class="container">
+<div class="row">
+	<div class="col col-sm-4 py-3 card-left">
+
+	  <div class="card brdsld overfl" style = "overflow: hidden;">
+	    <a href="https://www.brooklynbridgepark.org/" target="_blank"><img class="card-img-top" src="css/bridge.jpg" alt="Card image cap" style = "height: 240px"></a>
+	    <div class="card-body cardcolor">
+	      <a href="https://www.brooklynbridgepark.org/" target="_blank"><h5 class="card-title">Brooklyn Bridge Park</h5></a>
+	      <p class="card-text">Kayaking. Music. Soccer. History. Movies. Fitness. Swimming. And more. Plan your perfect park visit... <a href="https://www.brooklynbridgepark.org/">read more</a></p>
+	    </div>
+	    <div class="card-footer section-light">
+	      <small class="text-muted ">Last updated 3 mins ago</small>
+	    </div>
+	  </div>
+		
+	</div>
+	<div class="col col-sm-4 py-3 card-bottom">
+
+	  <div class="card brdsld overfl">
+	    <a href="http://brooklyn.news12.com/" target="_blank"><img class="card-img-top" src="css/news.jpg" alt="Card image cap" style = "height: 240px"></a>
+	    <div class="card-body cardcolor">
+	      <a href="http://brooklyn.news12.com/" target="_blank"><h5 class="card-title">Brooklyn News</h5></a>
+	      <p class="card-text">The U.S. economy added 148,000 jobs last month. The unemployment rate stayed at 4.1 percent... <a href="http://brooklyn.news12.com/">read more</a></p>
+	    </div>
+	    <div class="card-footer section-light">
+	      <small class="text-muted">Last updated 2 hours ago</small>
+	    </div>
+	  </div>
+		
+	</div>
+	<div class="col col-sm-4 py-3 card-right">
+
+	  <div class="card brdsld overfl">
+	    <a href="https://www.nytimes.com/" target="_blank"><img class="card-img-top" src="css/brk6.jpg" alt="Card image cap" style = "height: 240px"></a>
+	    <div class="card-body cardcolor">
+	      <a href="https://www.nytimes.com/" target="_blank"><h5 class="card-title">NY Times</h5></a>
+	      <p class="card-text">Much of what the federal government does has scientific and technological underpinnings... <a href="https://www.nytimes.com/">read more</a></p>
+	    </div>
+	    <div class="card-footer section-light">
+	      <small class="text-muted ">Last updated 34 mins ago</small>
+	    </div>
+	  </div>
+		
+	</div>
+</div>
+<!-- end of row 1 -->
+
+
+
+
+<div class="row">
+	<div class="col col-sm-6 py-3 card-left">
+		
+		<div class="card text-center brdsld">
+		  <div class="card-header section-light">
+		    <a href="https://www.usmagazine.com/" target="_blank">US Weekly</a>
+		  </div>
+		  <div class="card-body cardcolor">
+		    <h5 class="card-title">Love Lives</h5>
+		    <p class="card-text">Travis Scott Plays Coy About Kylie Jenner’s Pregnancy</p>
+		    <a href="https://www.usmagazine.com/celebrity-news/news/travis-scott-on-kylie-jenner-relationship-pregnancy/" class="btn">Read More</a>
+		  </div>
+		  <div class="card-footer text-muted section-light">
+		    1 days ago
+		  </div>
+		</div>
+
+	</div>
+	<div class="col col-sm-6 py-3 card-right">
+
+		<div class="card text-center brdsld">
+		  <div class="card-header section-light">
+		    <a href="http://www.nydailynews.com/" target="_blank">NY Daily News</a>
+		  </div>
+		  <div class="card-body cardcolor">
+		    <h5 class="card-title">Rashida Jones</h5>
+		    <p class="card-text">Rashida Jones slams critics of Golden Globes ‘blackout’</p>
+		    <a href="http://www.nydailynews.com/entertainment/rashida-jones-slams-critics-golden-globes-blackout-article-1.3739781" class="btn">Read More</a>
+		  </div>
+		  <div class="card-footer text-muted section-light">
+		    2 days ago
+		  </div>
+		</div>
+		
+	</div>
+</div>
+<!-- end of row 2 -->
+
+
+
+
+
+<div class="row mx-auto">
+
+	<div class="col col-sm-4 py-3 card-left">
+
+		<div class="card mx-auto brdsld overfl" style="width: 18rem;">
+		  <a href="https://nypost.com/"><img class="card-img-top" src="css/trump.jpg" alt="Trump Parent" style="height: 12rem;">
+		  <div class="card-body section-light"></a>
+		    <h5 class="card-title">New York Post</h5>
+		     <a href="https://nypost.com/"><p class="card-text">Bombshell book calls Trump an absentee dad...</p></a>
+		  </div>
+		</div>
+		
+	</div>
+	<div class="col col-sm-4 py-3 card-bottom">
+
+		<div class="card mx-auto brdsld overfl" style="width: 18rem;">
+		  <a href="https://nypost.com/2018/01/05/could-patriots-saga-lead-bill-belichick-back-to-the-giants/"> <img class="card-img-top" src="css/serby1.jpg" alt="Giants" style="height: 12rem;"></a>
+		  <div class="card-body section-light">
+		    <h5 class="card-title">Brooklyn Post</h5>
+		    <a href="https://nypost.com/2018/01/05/could-patriots-saga-lead-bill-belichick-back-to-the-giants/"><p class="card-text">Giants have to make a run at Bill Belichick amid Patriots strife</p></a>
+		  </div>
+		</div>
+		
+	</div>
+	<div class="col col-sm-4 py-3 card-right">
+
+		<div class="card mx-auto brdsld overfl" style="width: 18rem;">
+		 <a href="https://www.nbcnewyork.com/news/local/"> <img class="card-img-top" src="css/fire.jpg" alt="Latest" style="height: 12rem;"></a>
+		  <div class="card-body section-light">
+		    <h5 class="card-title">NBC</h5>
+		   <a href="https://www.nbcnewyork.com/news/local/"> <p class="card-text">Striking Images Show Flames Leap From Cars, NJ Power Lines...</p> </a>
+		  </div>
+		</div>
+		
+	</div>
+
+</div>
+<!-- end of row 3 -->
+</div>
+</section>    
+<!-- /Section 2 -->
+
+    <!-- Section 3 -->
+     <div class = "brk3">
+    	<div class = "ptext">
+    	</div>
+    </div>   
+	<section class = "section section-dark" id="Movies">
+    	<h2 class="scrollpage">Movies</h2>
+    	<p class="scrollpage">
+    		d ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, am sed quia consequuntur magni dolores eo
+    	</p>
+
+
+    	<div class="container">
+
+
+    	<div class="container my-5"> <h2 class="mb-5 scrollpage"> 5th of August </h2> 
+    	<div class="row d-flex justify-content-between">
+    	<div class="col col-md-4 d-flex justify-content-between">
+    	<div class="maincontainer">
+    	<div class="thecard brdsld"  id = "movie1">
+    	<div class="card thefront" >
+		  <img class="card-img-top " src="css/toy.jpg" alt="Card image cap" style='height: 100%; background-attachment: cover'>
+		</div>
+		<div class="card theback" style="width: 20rem;">  
+		  <div class="card-body">
+		  	<h4>Toy Story</h4>
+		    <p class="card-text">A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room.</p>
+		    <a href="http://www.imdb.com/title/tt0114709/?ref_=nv_sr_1" target="_blank">Read More...</a>
+		  </div>
+		  <div class="card-footer text-muted">
+		    Showing @ 6:00pm
+		  </div>
+		</div>
+		</div>
+		</div>
+		</div>
+
+
+		<div class="col col-md-4">
+    	<div class="maincontainer">
+    	<div class="thecard brdsld" id = "movie2">
+    	<div class="card thefront" >
+		  <img class="card-img-top " src="css/fight.jpg" alt="Card image cap" style='height: 100%; background-attachment: cover'>
+		  <div class="card-body">
+		  </div>
+		</div>
+		<div class="card theback" style="width: 20rem;">  
+		  <div class="card-body">
+		  	<h4>Fight Club</h4>
+		    <p class="card-text" style = "font-size: 0.85rem">An insomniac office worker, looking for a way to change his life, crosses paths with a devil-may-care soapmaker, forming an underground fight club that evolves into something much, much more.</p>
+		    <a href="http://www.imdb.com/title/tt0137523/?ref_=nv_sr_1" target="_blank">Read More...</a>
+		  </div>
+		  <div class="card-footer text-muted">
+		    Showing @ 8:00pm
+		  </div>
+		</div>
+		</div>
+		</div>
+		</div>
+
+
+		<div class="col col-md-4">
+    	<div class="maincontainer">
+    	<div class="thecard brdsld" id = "movie3">
+    	<div class="card thefront" >
+		  <img class="card-img-top " src="css/star1.jpg" alt="Card image cap" style='height: 100%; background-attachment: cover; border-radius: 12px'>
+		  <div class="card-body">
+		   
+		  </div>
+		</div>
+		<div class="card theback" style="width: 20rem;">  
+		  <div class="card-body">
+		  	<h4>Star Wars IV</h4>
+		    <p class="card-text" style = "font-size: 0.9rem">Luke Skywalker joins forces with a Jedi, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire's world-destroying battle-station while attempting to rescue Princess Leia.</p>
+		    <a href="http://www.imdb.com/title/tt0076759/?ref_=nv_sr_1" target="_blank">Read More...</a>
+		  </div>
+		  <div class="card-footer text-muted">
+		    Showing @ 10:00pm
+		  </div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+
+
+
+
+
+		<div class="container"> <h2 class="my-5 scrollpage"> 6th of August </h2> 
+    	<div class="row d-flex justify-content-between">
+    	<div class="col col-md-4 d-flex justify-content-between">
+
+
+    	<div class="maincontainer ">
+    	<div class="thecard brdsld" id = "movie4">
+    	<div class="card thefront" style="width: 20rem;">
+		  <img class="card-img-top " src="css/sunset.jpg" alt="Card image cap" style='height: 100%; background-attachment: cover'>
+		  <div class="card-body">
+		    <p class="card-text"></p>
+		  </div>
+		</div>
+		<div class="card theback" style="width: 20rem;">
+		  
+		  <div class="card-body">
+		  	<h4>Before Sunrice</h4>
+		    <p class="card-text">Nine years after Jesse and Celine first met, they encounter each other again on the French leg of Jesse's book tour.
+		    </p>
+		    <a href="http://www.imdb.com/title/tt0381681/?ref_=nv_sr_1" target="_blank">Read More...</a>
+		  </div>
+		  <div class="card-footer text-muted">
+		    Showing @ 6:00pm
+		  </div>
+		</div>
+		</div>
+		</div>
+		</div>
+
+
+		<div class="col col-md-4">
+    	<div class="maincontainer">
+    	<div class="thecard brdsld" id = "movie5">
+    	<div class="card thefront" style="width: 20rem;">
+		  <img class="card-img-top " src="css/hero.jpg" alt="Card image cap" style='height: 100%; background-attachment: cover'>
+		  <div class="card-body">
+		
+		  </div>
+		</div>
+		<div class="card theback" style="width: 20rem;">
+		  
+		  <div class="card-body">
+		  	<h4>Last Action Hero</h4>
+		    <p class="card-text">With the help of a magic ticket, a young film fan is transported into the fictional world of his favorite action film character.</p>
+  		    <a href="http://www.imdb.com/title/tt0119094/?ref_=fn_al_tt_1" target="_blank">Read More...</a>
+		  </div>
+		  <div class="card-footer text-muted">
+		    Showing @ 8:00pm
+		  </div>
+		</div>
+		</div>
+		</div>
+		</div>
+
+
+		<div class="col col-md-4">
+    	<div class="maincontainer">
+    	<div class="thecard brdsld" id = "movie6">
+    	<div class="card thefront" style="width: 20rem;">
+		  <img class="card-img-top " src="css/star2.jpg" alt="Card image cap" style='height: 100%; background-attachment: cover'>
+		  <div class="card-body">
+		    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+		  </div>
+		</div>
+		<div class="card theback" style="width: 20rem;">
+		  <div class="card-body">
+		  	<h4>Star Wars V</h4>
+		    <p class="card-text" style = "font-size: 0.85rem">After the rebels are overpowered by the Empire on planet Hoth, Luke begins Jedi training with Yoda. His friends accept shelter from a questionable ally as Darth Vader hunts them in a plan to capture Luke.</p>
+  		    <a href="http://www.imdb.com/title/tt0080684/?ref_=fn_al_tt_2" target="_blank">Read More...</a>
+		  </div>
+		  <div class="card-footer text-muted">
+		    Showing @ 10:00pm
+		  </div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+
+
+		<div class="container"> <h2 class="my-5 scrollpage"> 7th of August </h2> 
+    	<div class="row d-flex justify-content-between">
+		<div class="col col-md-4">
+    	<div class="maincontainer">
+    	<div class="thecard brdsld" id = "movie7">
+    	<div class="card thefront" style="width: 20rem;">
+		  <img class="card-img-top " src="css/snatch.jpg" alt="Card image cap" style='height: 100%; background-attachment: cover'>
+		  <div class="card-body">
+		  </div>
+		</div>
+		<div class="card theback" style="width: 20rem;">
+		  <div class="card-body">
+		  	<h4>Snatch</h4>
+		    <p class="card-text" style = "font-size: 0.85rem">Unscrupulous boxing promoters, violent bookmakers, a Russian gangster, incompetent amateur robbers, and supposedly Jewish jewelers fight to track down a priceless stolen diamond.</p>
+  		    <a href="http://www.imdb.com/title/tt0208092/?ref_=fn_al_tt_1" target="_blank">Read More...</a>
+		  </div>
+		  <div class="card-footer text-muted">
+		    Showing @ 6:00pm
+		  </div>
+		</div>
+		</div>
+		</div>
+		</div>
+
+
+		<div class="col col-md-4">
+    	<div class="maincontainer">
+    	<div class="thecard brdsld" id = "movie8">
+    	<div class="card thefront" style="width: 20rem;">
+		  <img class="card-img-top " src="css/fistful.jpg" alt="Card image cap" style='height: 100%; background-attachment: cover'>
+		  <div class="card-body">
+		  </div>
+		</div>
+		<div class="card theback" style="width: 20rem;"> 
+		  <div class="card-body">
+		  	<h4>A Fistful Of Dollars</h4>
+		    <p class="card-text">A wandering gunfighter plays two rival families against each other in a town torn apart by greed, pride, and revenge.</p>
+  		    <a href="http://www.imdb.com/title/tt0058461/?ref_=nv_sr_1" target="_blank">Read More...</a>
+		  </div>
+		  <div class="card-footer text-muted">
+		    Showing @ 8:00pm
+		  </div>
+		</div>
+		</div>
+		</div>
+		</div>
+
+
+		<div class="col col-md-4">
+    	<div class="maincontainer">
+    	<div class="thecard brdsld" id = "movie9">
+    	<div class="card thefront" style="width: 20rem;">
+		  <img class="card-img-top " src="css/star3.jpg" alt="Card image cap" style='height: 100%; background-attachment: cover'>
+		  <div class="card-body">
+		  </div>
+		</div>
+		<div class="card theback" style="width: 20rem;">
+		  
+		  <div class="card-body">
+		  	<h4>Star Wars VI</h4>
+		    <p class="card-text" style = "font-size: 0.85rem">After a mission to rescue Han Solo from Jabba the Hutt, the rebels dispatch to Endor to destroy a powerful Death Star. Luke struggles to help Vader from the dark side without falling into the Emperor's trap.</p>
+  		    <a href="http://www.imdb.com/title/tt0086190/?ref_=fn_al_tt_1" target="_blank">Read More...</a>
+		  </div>
+		  <div class="card-footer text-muted">
+		    Showing @ 10:00pm
+		  </div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>  
+
+
+
+
+		<div class="container"> <h2 class="my-5 scrollpage"> 8th of August </h2> 
+    	<div class="row d-flex justify-content-between">
+		<div class="col col-md-4">
+    	<div class="maincontainer">
+    	<div class="thecard brdsld" id = "movie10">
+    	<div class="card thefront" style="width: 20rem;">
+		  <img class="card-img-top " src="css/cons.jpg" alt="Card image cap" style='height: 100%; background-attachment: cover'>
+		  <div class="card-body">
+		  </div>
+		</div>
+		<div class="card theback" style="width: 20rem;">
+		  <div class="card-body">
+		  	<h4>The Dinner Game</h4>
+		    <p class="card-text" style = "font-size: 0.85rem">To amuse themselves at a weekly dinner, a few well-heeled folk each bring a dimwit along who is to talk about his pastime. Each member seeks to introduce a champion dumbbell.</p>
+  		    <a href="http://www.imdb.com/title/tt0119038/?ref_=nv_sr_1" target="_blank">Read More...</a>
+		  </div>
+		  <div class="card-footer text-muted">
+		    Showing @ 6:00pm
+		  </div>
+		</div>
+		</div>
+		</div>
+		</div>
+
+
+		<div class="col col-md-4">
+    	<div class="maincontainer">
+    	<div class="thecard brdsld" id = "movie11">
+    	<div class="card thefront" style="width: 20rem;">
+		  <img class="card-img-top " src="css/dogs.jpg" alt="Card image cap" style='height: 100%; background-attachment: cover'>
+		  <div class="card-body">
+		  </div>
+		</div>
+		<div class="card theback" style="width: 20rem;">
+		  
+		  <div class="card-body">
+		  	<h4>Reservoir Dogs</h4>
+		    <p class="card-text" style = "font-size: 0.85rem">After a simple jewelry heist goes terribly wrong, the surviving criminals begin to suspect that one of them is a police informant.</p>
+  		    <a href="http://www.imdb.com/title/tt0105236/?ref_=nv_sr_1" target="_blank">Read More...</a>
+		  </div>
+		  <div class="card-footer text-muted">
+		    Showing @ 10:00pm
+		  </div>
+		</div>
+		</div>
+		</div>
+		</div>
+
+
+		<div class="col col-md-4">
+    	<div class="maincontainer">
+    	<div class="thecard brdsld" id = "movie12">
+    	<div class="card thefront" style="width: 20rem;">
+		  <img class="card-img-top " src="css/redemption.jpg" alt="Card image cap" style='height: 100%; background-attachment: cover'>
+		  <div class="card-body">
+		  </div>
+		</div>
+		<div class="card theback" style="width: 20rem;">
+		  <div class="card-body">
+		  	<h4>Shawshank Redemption</h4>
+		    <p class="card-text" style = "font-size: 0.85rem">Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.</p>
+  		    <a href="http://www.imdb.com/title/tt0111161/?ref_=tt_rec_tti" target="_blank">Read More...</a>
+		  </div>
+		  <div class="card-footer text-muted">
+		    Showing @ 10:00pm
+		  </div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div>
+		</div> 
+
+	<div class="py-5 scrollpage">
+		Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit amet consectetur adipisci[ng] velit, sed quia non-numquam [do] eius modi tempora inci[di]dunt, ut labore et dolore magnam aliquam quaerat voluptatem.
+	</div>
+    </section>   
+    </div> 
+	<!-- /Section 3 -->
+
+	<!-- Section 4 -->
+    <div class = "brk4 ">
+    </div>	
+	<!-- /Section 4 -->
+
+
+
+
+	<footer id="footer">
+    <div class="container py-3" id = "Contact" >
+      <div class = "row">
+
+      	<div class = "col col-sm-6 mt-3 mb-5 text-sm-center">
+      		    <h2 >Contact Info</h2>
+      		    <div class="formfooter">
+      		 	<h3 class = "py-3">Brooklyn Vibes Events Co.</h3>
+      			<i class="fa fa-location-arrow fa-2x py-4 text-center" aria-hidden="true"></i> Furman St, Brooklyn Park, NY, 11201<br>
+      			<i class="fa fa-envelope fa-2x py-4 text-center" aria-hidden="true"> </i> Some-email@vibes-events.com <br>
+      			<i class="fa fa-phone fa-2x py-4 text-center" aria-hidden="true"></i>  +396541000 / +396541001<br>
+      			</div>
+      	</div>
+
+
+    	<div class="col-sm-6 mt-3 mb-5 text-center">
+    		<h2 >Contact form</h2>
+    		<form class = "formfooter" >
+    			<label>Name:</label><br>
+    			<input type="text" name="" class="pb-2 w-75"><br>
+    			<label>Email:</label><br>
+    			<input type="email" name="" class="pb-2 w-75"><br>
+    			<label>Message:</label><br>
+    			<textarea class="pb-2 w-75"></textarea><br>
+    			<button type="submit" class="m-2" style="line-height: 16px">Submit</button>
+    		</form>
+    	</div>
+      </div>
+
+
+      <div class="row">
+        <div class="col col-sm-6 offset-sm-3 text-center">
+           <h2 class="text-center">Newsletter</h2>
+           <small class="form-text text-muted text-center">Sign up for upcoming festival news</small>
+           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+           <small id="emailHelp" class="form-text text-muted">Don't lose out. Subscribe for our latest News!</small>
+           
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col col-sm-6 offset-sm-3 text-center">
+        	<button type="submit" class="" style="line-height: 16px">Submit</button>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="container-fluid" id = "btmbar" style = "background-color: #0a0109; height: 4rem; line-height: 4rem">
+      <div class="row">
+
+      	<div class="col col-md-4 m-auto">
+      		<p class="h4" style="color:#f7957b">Brooklyn Outdoor Film Festival</p>
+      	</div>
+
+        <div class="col col-md-3 m-auto">
+          <a href="https://www.twitter.com" target="_blank" class="btn btn-social-icon btn-twitter mx-2">
+            <span class="fa fa-twitter"></span>
+          </a>
+          <a href="https://www.facebook.com" target="_blank" class="btn btn-social-icon btn-facebook mx-2">
+            <span class="fa fa-facebook"></span>
+          </a>
+          <a href="https://www.instagram.com" target="_blank" class="btn btn-social-icon btn-instagram mx-2">
+            <span class="fa fa-instagram"></span>
+          </a>
+          <a href="https://www.pinterest.com" target="_blank" class="btn btn-social-icon btn-pinterest mx-2">
+            <span class="fa fa-pinterest"></span>
+          </a>
+          <a href="https://www.flickr.com" target="_blank" class="btn btn-social-icon btn-flickr mx-2">
+            <span class="fa fa-flickr"></span>
+          </a>
+        </div>
+
+
+
+      </div>
+    </div>
+    </footer>
+    <!-- Optional JavaScript -->
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- Animate -->
+    <script type="text/javascript">
+    	window.sr = ScrollReveal({ reset: true });
+    	
+    	sr.reveal('.scrollpage', { 
+    		duration: 500,
+    		origin: 'bottom',
+    		distance: '10px'
+    	 });   
+
+
+    	sr.reveal('.card-left', { 
+    		duration: 2000,
+    		origin: 'left',
+    		distance: '50px',
+    		mobile: false
+    	 });
+    	sr.reveal('.card-right', { 
+    		duration: 2000,
+    		origin: 'right',
+    		distance: '50px',
+    		mobile: false
+    	 }); 		 		
+    	sr.reveal('.card-bottom', { 
+    		duration: 2000,
+    		origin: 'bottom',
+    		distance: '50px',
+    		mobile: false
+    	 }); 		
+
+    	// Published Media Scrolling 
+    </script>
+    <!-- /Animate -->
+    <!-- Smooth Scrolling -->
+    <script>
+    	$(function() {
+      // Smooth Scrolling
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+    </script>
+    <!-- /Smooth Scrolling -->
+
+    <script type="text/javascript">
+		function myFunction() {
+	    var name = document.getElementById('name').value;
+	    var email = document.getElementById('email').value;
+	    var select = document.getElementById('exampleFormControlSelect1').value;
+		if (name == '' || email == '' || select == "-1"){
+			alert( "Please fill in all fields" );
+			return false;
+		} else {
+			alert("Your info has been received");
+		}
+		}
+	</script>
+
+	<script type="text/javascript">
+	$(window).scroll(function() {    
+	var scroll = $(window).scrollTop();
+
+    if (scroll >= 10) {
+        $("#firstnav").addClass("hidenavbar");
+    } else {
+        $("#firstnav").removeClass("hidenavbar");
+    }
+	});
+	</script>
+
+
+	<script type="text/javascript">	
+//  When scrolling and the firstnavbar disappears give the second bar a fixed-top class
+	$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+	if (scroll >= 10) {  
+	  $("#mynavbar").addClass("fixed-top");
+	} else {
+	$("#mynavbar").removeClass("fixed-top");
+	}
+	});
+
+
+// When navbar disappears after scroll stretch out the bar to take full length of 12 col
+	$(window).scroll(function() {    
+	var scroll = $(window).scrollTop();
+
+    if (scroll >= 10) {
+        
+        $("#yoyo").removeClass("col-md-10");
+    } else {
+        $("#yoyo").addClass("col-md-10");
+    }
+	});
+	</script>
+
+  </body>
+</html>
